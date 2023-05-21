@@ -1,0 +1,4 @@
+configuration:
+    images_directory:
+        name: Image directory
+        description: Folder to take images from
