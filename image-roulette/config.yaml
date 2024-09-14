@@ -1,6 +1,6 @@
 name: "Image Roulette"
 description: "Servers a random image from a local folder on the network"
-version: "0.0.5"
+version: "0.2.0"
 slug: "image"
 init: false
 map:
@@ -16,5 +16,7 @@ ports:
 webui: http://[HOST]:[PORT:5000]/random
 options:
   images_directory: "/media"
+  period_seconds: 600
 schema:
   images_directory: str
+  period_seconds: int(0,)

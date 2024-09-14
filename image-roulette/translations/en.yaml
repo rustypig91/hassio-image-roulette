@@ -2,3 +2,6 @@ configuration:
     images_directory:
         name: Image directory
         description: Folder to take images from
+    period_seconds:
+        name: Period
+        description: Number of seconds each image will show for
