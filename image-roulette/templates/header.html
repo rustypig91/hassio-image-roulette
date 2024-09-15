@@ -1,0 +1,30 @@
+<title>Image Roulette</title>
+<script>
+    var previousIndex = -1;
+    var images = [{% for image in images %} '{{ url_for('static', filename=image) }}', {% endfor %}];
+
+    function changeBackground() {
+        var randomIndex = Math.floor(Math.random() * images.length);
+
+        // Ensure the same random number is not chosen two times in a row
+        while (randomIndex === previousIndex) {
+            randomIndex = Math.floor(Math.random() * images.length);
+        }
+
+        previousIndex = randomIndex;
+        console.log("Changing background to " + images[randomIndex]);
+        var imageUrl = images[randomIndex];
+        document.body.style.backgroundImage = 'url(' + imageUrl + ')';
+    }
+    window.onload = changeBackground;
+    setInterval(changeBackground, {{period_seconds * 1000}});
+</script>
+<style>
+    body, html {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+</style>
