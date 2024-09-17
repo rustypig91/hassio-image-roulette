@@ -1,6 +1,6 @@
 name: "Image Roulette"
 description: "Servers a random image from a local folder on the network"
-version: "0.2.1"
+version: "0.3.0"
 slug: "image"
 init: false
 map:

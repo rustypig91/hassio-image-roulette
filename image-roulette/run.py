@@ -58,4 +58,5 @@ if __name__ == '__main__':
     import logging
     logger = logging.getLogger("waitress")
     logger.setLevel(logging.INFO)
+    app.config['TEMPLATES_AUTO_RELOAD'] = True
     serve(app, host='0.0.0.0', port=5000)
