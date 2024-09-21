@@ -5,6 +5,6 @@ configuration:
     period_seconds:
         name: Period
         description: Number of seconds each image will show for
-    custom_html:
-        name: Custom html
-        description: Path to custom html file to use instead of default
+    templates_folder:
+        name: Templates folder
+        description: Path to custom flask templates folder to use instead of default

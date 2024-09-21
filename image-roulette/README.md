@@ -6,9 +6,9 @@ Serve a random image from specified folder.
 
 ## Custom HTML
 
-A custom html can be used to add e.g. overlay to display the current time or similar.
-To use a custom url set the `Custom html` option to the html path e.g. `/media/custom.html`
-Use this template to start working on the custom.html
+Custom html can be used to add e.g. overlay to display the current time or similar.
+To use a custom url set the `Templates folder` option to a path containing `index.html` e.g. `/media/`
+This should be folder containing flask templates. Use the following as a baseline for index.html.
 
 
 ```html<html>
